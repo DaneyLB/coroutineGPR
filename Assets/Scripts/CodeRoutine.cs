@@ -13,10 +13,13 @@ public class CodeRoutine : MonoBehaviour
     }
     IEnumerator Print()
     {
+        for (float ft = 1f; ft >= 0; ft -= 0.1f)
+        { 
         Debug.Log("Ik start nu de coroutine");
         yield return new WaitForSeconds(0.5f);
         Debug.Log("coroutine update");
         yield return new WaitForSeconds(0.5f);
         Debug.Log("coroutine einde");
+        }
     }
 }
